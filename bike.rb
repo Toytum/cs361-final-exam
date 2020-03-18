@@ -15,4 +15,9 @@ def clean
     puts "Cleaning..."
 end
 
+def weekly_rate_total
+    @weekly_rate
+    @equipment
+end
+
 end

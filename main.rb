@@ -9,7 +9,7 @@ require_relative 'mountain_bike'
 
 bikes = [
   BmxBike.new(TailPack.new,5,20,70),
-  RoadBike.new([Pannier.new,Pannier.new],nil,15),
+  RoadBike.new([Pannier.new,Pannier.new],nil,15,105),
   MountainBike.new(RollPack.new,10,25,90),
   MountainBike.new(RollPack.new,10,25,90)
 ]
@@ -19,14 +19,18 @@ bikes[1].adjust_for_use
 bikes[2].adjust_for_use
 
 total_price = 0
-total_price += bikes[0].weekly_rate
-total_price += bikes[0].equipment.cost
-total_price += bikes[1].daily_rate * 7
-total_price += bikes[1].equipment[0].price
-total_price += bikes[1].equipment[1].price
-total_price += bikes[2].weekly_rate
-total_price += bikes[2].equipment.price
-total_price += bikes[3].weekly_rate
-total_price += bikes[3].equipment.price
+# total_price += bikes[0].weekly_rate
+# total_price += bikes[0].equipment.price
+# total_price += bikes[1].weekly_rate
+# total_price += bikes[1].equipment[0].price
+# total_price += bikes[1].equipment[1].price
+# total_price += bikes[2].weekly_rate
+# total_price += bikes[2].equipment.price
+# total_price += bikes[3].weekly_rate
+# total_price += bikes[3].equipment.price
+total_price += bikes[0].weekly_rate_total
+total_price += bikes[1].weekly_rate_total
+total_price += bikes[2].weekly_rate_total
+total_price += bikes[3].weekly_rate_total
 
 puts "Total price: #{total_price}"
