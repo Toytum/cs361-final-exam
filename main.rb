@@ -13,9 +13,11 @@ bikes = [
   MountainBike.new(RollPack.new,10,25,90),
   MountainBike.new(RollPack.new,10,25,90)
 ]
+
 bikes[0].adjust_for_use
 bikes[1].adjust_for_use
 bikes[2].adjust_for_use
+
 total_price = 0
 total_price += bikes[0].weekly_rate
 total_price += bikes[0].equipment.cost

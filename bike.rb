@@ -15,11 +15,4 @@ def clean
     puts "Cleaning..."
 end
 
-def adjust_for_use
-end
-
-def equipment
-    @equipment
-end
-
 end

@@ -1,4 +1,3 @@
-require_relative 'pannier'
 require_relative 'bike'
 
 class RoadBike < Bike
