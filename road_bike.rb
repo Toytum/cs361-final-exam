@@ -1,12 +1,7 @@
 require_relative 'pannier'
 require_relative 'bike'
 
-class RoadBike include Bike
-
-  def initialize
-    @panniers = [Pannier.new, Pannier.new]
-    @daily_rate = 15
-  end
+class RoadBike < Bike
 
   def adjust_for_use
     puts "Lubricating gears..."
