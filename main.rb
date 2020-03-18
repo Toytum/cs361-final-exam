@@ -8,10 +8,10 @@ require_relative 'road_bike'
 require_relative 'mountain_bike'
 
 bikes = [
-  BmxBike.new,
-  RoadBike.new,
-  MountainBike.new,
-  MountainBike.new
+  BmxBike.new(TailPack.new,70,20,5),
+  RoadBike.new(RollPack.new,nil,15),
+  MountainBike.new(E,90,25,10),
+  MountainBike.new(E,90,25,10)
 ]
 
 total_price = 0
